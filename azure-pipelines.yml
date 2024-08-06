@@ -25,12 +25,12 @@ steps:
     sonarQubeRunAnalysis: true
     sqMavenPluginVersionChoice: 'latest'
 
-- task: SonarQubePrepare@5
-  inputs:
-    SonarQube: 'your-sonarqube-service-connection'
-    scannerMode: 'CLI'
-    configMode: 'file'
-    configFile: 'sonar-project.properties'
+- #task: SonarQubePrepare@5
+  #inputs:
+   # SonarQube: 'your-sonarqube-service-connection'
+   # scannerMode: 'CLI'
+    #configMode: 'file'
+    #configFile: 'sonar-project.properties'
 
 - script: |
     mvn clean verify
